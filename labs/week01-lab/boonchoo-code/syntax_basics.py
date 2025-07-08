@@ -9,7 +9,8 @@ name = "Your Name Here"  # Replace with your actual name
 age = 20  # Replace with your actual age
 height = 5.8  # Replace with your height in feet
 is_student = True  # True or False
-
+# print ได้ทุกประเภท ผ่าน function print
+# printf = f คือ format สิ่งที่คุนต้องการ print
 # Print all variables
 print("Name:", name)
 print("Age:", age)
@@ -19,6 +20,7 @@ print("Is Student:", is_student)
 # Exercise 2: Data Types
 # Create variables of different types and print their types
 my_string = "Hello Python"
+myString = "Hello Python World" #ใช้ กฏ เหมือนกับ C ในการ declare function
 my_integer = 42
 my_float = 3.14
 my_boolean = False
@@ -34,6 +36,9 @@ first_name = "John"
 last_name = "Doe"
 
 # Concatenate strings
+#number + number
+#str + any type ฝั่งขวาจะเป็นอะไรก็ได้ 
+# ดูฝั่งซ้าย เครื่องหมาย บวก
 full_name = first_name + " " + last_name
 print("Full name:", full_name)
 
@@ -48,10 +53,10 @@ num2 = 3
 print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
-print("Division:", num1 / num2)
-print("Integer Division:", num1 // num2)
-print("Remainder (Modulo):", num1 % num2)
-print("Power:", num1 ** num2)
+print("Division:", num1 / num2) # int divide int = float หารปกติ
+print("Integer Division:", num1 // num2) # int divide int = float หาร int
+print("Remainder (Modulo):", num1 % num2) # 
+print("Power:", num1 ** num2) # power ยกกำลัง 10 ^ 3
 
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
@@ -77,16 +82,16 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
-favorite_color = 
+favorite_color = "Violet"
 
 # Integer variable with the current year
-current_year = 
+current_year = 2025
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 
+favorite_number = 255
 
 # Boolean variable indicating if you like pizza
-likes_pizza = 
+likes_pizza = False
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)

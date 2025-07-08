@@ -88,10 +88,10 @@ favorite_color = "Violet"
 current_year = 2025
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 255
+favorite_number = 200
 
 # Boolean variable indicating if you like pizza
-likes_pizza = False
+likes_pizza = True
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)

@@ -9,8 +9,12 @@ name = "Your Name Here"  # Replace with your actual name
 age = 20  # Replace with your actual age
 height = 5.8  # Replace with your height in feet
 is_student = True  # True or False
+<<<<<<< HEAD
 # print ได้ทุกประเภท ผ่าน function print
 # printf = f คือ format สิ่งที่คุนต้องการ print
+=======
+
+>>>>>>> upstream/main
 # Print all variables
 print("Name:", name)
 print("Age:", age)
@@ -20,7 +24,10 @@ print("Is Student:", is_student)
 # Exercise 2: Data Types
 # Create variables of different types and print their types
 my_string = "Hello Python"
+<<<<<<< HEAD
 myString = "Hello Python World" #ใช้ กฏ เหมือนกับ C ในการ declare function
+=======
+>>>>>>> upstream/main
 my_integer = 42
 my_float = 3.14
 my_boolean = False
@@ -36,9 +43,12 @@ first_name = "John"
 last_name = "Doe"
 
 # Concatenate strings
+<<<<<<< HEAD
 #number + number
 #str + any type ฝั่งขวาจะเป็นอะไรก็ได้ 
 # ดูฝั่งซ้าย เครื่องหมาย บวก
+=======
+>>>>>>> upstream/main
 full_name = first_name + " " + last_name
 print("Full name:", full_name)
 
@@ -53,10 +63,17 @@ num2 = 3
 print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
+<<<<<<< HEAD
 print("Division:", num1 / num2) # int divide int = float หารปกติ
 print("Integer Division:", num1 // num2) # int divide int = float หาร int
 print("Remainder (Modulo):", num1 % num2) # 
 print("Power:", num1 ** num2) # power ยกกำลัง 10 ^ 3
+=======
+print("Division:", num1 / num2)
+print("Integer Division:", num1 // num2)
+print("Remainder (Modulo):", num1 % num2)
+print("Power:", num1 ** num2)
+>>>>>>> upstream/main
 
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
@@ -82,6 +99,7 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
+<<<<<<< HEAD
 favorite_color = "Violet"
 
 # Integer variable with the current year
@@ -92,6 +110,18 @@ favorite_number = 200
 
 # Boolean variable indicating if you like pizza
 likes_pizza = True
+=======
+favorite_color = 
+
+# Integer variable with the current year
+current_year = 
+
+# Float variable with your favorite number (with decimal)
+favorite_number = 
+
+# Boolean variable indicating if you like pizza
+likes_pizza = 
+>>>>>>> upstream/main
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)

@@ -25,7 +25,7 @@ if entered_pin == pin:
                 else: # enter ค่าลบมา ก็จะdisplay นี้
                     print("Sorry you can't enter negative number")
         elif choice == "3":
-            print("Deposit")        
+            print("Deposit")            
             amount = int(input("Enter amount to Deposit: "))
             if(amount > 0): # เหมือนกันคือค่าต้องมากกว่า 0 เพราะไม่งั้น มันจะไปลบ กับยอดเงินเดิม
                 balance += amount

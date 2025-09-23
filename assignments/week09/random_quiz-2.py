@@ -41,7 +41,6 @@ Example
 """
 
 import random
-
 def get_parity_hint(number):
     if number % 2 == 0:
         return "HINT: The number is even" 
@@ -58,8 +57,44 @@ def get_divisibility_hint(number):
 
 def get_range_hint(number, current_min=1, current_max=100):
     # Return narrowed range around the number
-    pass
+    # current_max = number +12
+    # current_min = number - 12
+    get_range = range(number - 12,number + 12)
+    return f"HINT: The narrowed range around the number is {get_range}"
 
 def get_thefirst_digit_hint(number):
     # Retun the first digit of the number
-    pass
+    first_digit = number // 10 # integer division
+    # second_way = str(number)[0]
+    return f"HINT: The first digit is {first_digit}"
+
+print("=== Enhanced GUESSING GAME ===")
+print("Guess my number between 1 and 100!")
+print("You have unlimited attempts.")
+
+random_number = random.randint(1,100)
+attempt = 1
+while True:
+    guess_number = int(input(f"{attempt} enter your guess number"))
+    if random_number == guess_number:
+        print(f"Congratulations! You won in {attempt} attempts")
+        break
+    elif random_number > guess_number:
+        print(f"Too low! Try again")
+    else:
+        print(f"Too high! Try again")
+    if attempt == 3:
+        result = get_parity_hint(random_number)
+        print(result)
+    elif attempt == 5:
+        result = get_divisibility_hint(random_number)
+        print(result)
+    elif attempt == 7:
+        get_range_hint(random_number)
+    elif attempt == 10:
+        print(get_thefirst_digit_hint(random_number))
+    
+
+    attempt += 1
+    # python i++ -> not have 
+    # python i += 1 , i = i + 1 -> they have

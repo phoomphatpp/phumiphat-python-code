@@ -25,3 +25,20 @@ Example
     Congratulations! You won in 3 attempts!
 
 """
+import random
+random_guess = random.randint(1,20)
+attempts = 6
+print("=== SIMPLE GUESSING GAME ===")
+print("Guess my number between 1 and 20!")
+print(f"You have {attempts} attempts.")
+    
+
+for i in range(attempts):
+    number_guess = int(input(f"Attempt {i+1} / 6 - enter you guess: "))
+    if number_guess > random_guess:
+        print("Too high! Try again.")
+    elif number_guess < random_guess:
+        print("Too low! Try again.")
+    else:
+        print(f"Congratulations! You won in {i+1} attempts!")
+        break

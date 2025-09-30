@@ -47,3 +47,43 @@ Transformations:
 USE: len(), split(), count(), upper(), lower(), title(), slicing operations
 
 """
+# text = input("Enter text :")
+text = "The Quick Brown Fox Jumps Over The Lazy Dog"
+print("=== TEXT ANALYSIS REPORT ===")
+print("Character Analysis:")
+# print(len(text))
+# print(text.count(" "))
+print(f"- Total characters: {len(text)} (with spaces), {len(text)-text.count(' ')} (without spaces)")
+vowels_list = []
+vowels_count = 0
+# เราต้องการหาวิธีการที่ได้ 
+# ไม่ใช้วิธีการที่ดีที่สุด
+
+for char in text.lower():
+    if char == "a":
+        vowels_list.append('a')
+        vowels_count += 1
+    elif char == "e":
+        vowels_list.append('e')
+        vowels_count += 1
+    elif char == "i":
+        vowels_list.append('i')
+        vowels_count += 1
+    elif char == "o":
+        vowels_list.append('o')
+        vowels_count += 1
+    elif char == "u":
+        vowels_list.append('u')
+        vowels_count += 1
+vowelsStr = ""
+for char in text.lower():
+    if char in ['a','e','i','o','u']:
+        vowelsStr += char
+# print(vowelsStr)
+# print(vowels_list)
+print(f"- Vowels: {vowels_count} ({vowels_list})")
+print(f"- Consonants: { ( len(text) - text.count(' ') ) - vowels_count}")
+
+word = text.split()
+print("Word Analysis:")
+print(f"- Total worlds: {len(word)}")
